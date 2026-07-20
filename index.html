@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <title>Мария Архангельская · SMM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+</head>
+<body>
+<!-- ===== ПРЕЛОАДЕР ===== -->
+<div id="preloader">
+  <div class="preloader-content">
+    <div class="preloader-horseshoe">
+      <img src="images/podckova.svg" alt="Загрузка" />
+    </div>
+    <p class="preloader-text">✦ ЗАГРУЗКА ✦</p>
+  </div>
+</div>
+  <!-- Канвас со звёздами как ФОН -->
+  <canvas id="starsCanvas"></canvas>
+
+<!-- Меню -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo" style="text-decoration: none; cursor: pointer;">✦ МА ✦</a>
+  
+  <!-- Бургер-кнопка с кружочками -->
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <div class="burger-dots-wrapper">
+      <span class="color-dot color-pink" data-theme="pink"></span>
+      <span class="color-dot color-dark-blue" data-theme="dark"></span>
+      <span class="color-dot color-cream" data-theme="cream"></span>
+    </div>
+    <div class="burger-menu" id="burgerMenu">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-horseshoe">
+        <img src="images/podckova.svg" alt="Подкова" />
+      </span>
+    </div>
+  </div>
+  
+  <ul class="nav-links" id="navLinks">
+    <li><a href="about.html">О себе</a></li>
+    <li><a href="index.html#skills">Навыки</a></li>
+    <li><a href="index.html#cases">Кейсы</a></li>
+    <li><a href="index.html#examples">Примеры</a></li>
+    <li class="nav-horseshoe-desktop">
+      <a href="index.html" style="display: inline-block; text-decoration: none; cursor: pointer;">
+        <img src="images/podckova.svg" alt="Подкова" />
+      </a>
+    </li>
+  </ul>
+  
+  <!-- Подкова с кружочками (десктоп) -->
+  <div class="nav-horseshoe-wrapper">
+    <div class="color-dots">
+      <span class="color-dot color-pink" data-theme="pink"></span>
+      <span class="color-dot color-dark-blue" data-theme="dark"></span>
+      <span class="color-dot color-cream" data-theme="cream"></span>
+    </div>
+    <div class="nav-horseshoe">
+      <a href="index.html" style="display: inline-block; text-decoration: none; cursor: pointer;">
+        <img src="images/podckova.svg" alt="Подкова" />
+      </a>
+    </div>
+  </div>
+</nav>
+  <!-- ГЕРОЙ -->
+  <header class="hero" id="hero">
+    <div class="hero-3d-wrapper">
+      <div class="hero-content">
+        <div class="hero-glitch">
+          <h1>МАРИЯ АРХАНГЕЛЬСКАЯ</h1>
+        </div>
+        <h2 class="subhead">ПРОДВИЖЕНИЕ · SMM</h2>
+        <p class="hero-desc">
+          Выстраиваю систему SMM, где каждый пост, сторис и рассылка подталкивают пользователя к целевому действию — оставить заявку или купить товар, а не просто поставить лайк.
+        </p>
+        <a href="about.html" class="hero-badge">✦ О себе ✦</a>
+      </div>
+    </div>
+    <div class="hero-horseshoe">
+      <img src="images/podckova.svg" alt="Подкова" />
+    </div>
+    <div class="hero-orb"></div>
+  </header>
+
+  <!-- НАВЫКИ -->
+  <section class="skills" id="skills">
+    <div class="section-label">✦ МОИ НАВЫКИ ✦</div>
+    <div class="skills-grid">
+      <div class="skill-card" data-tilt>
+        <h3>Контент-менеджмент и креатив</h3>
+        <ul>
+          <li>Разработка контент-стратегии: рубрикатор, контент-план</li>
+          <li>Визуальное мышление: дизайн, Figma, композиция</li>
+          <li>Съёмка и монтаж: Reels, Shorts, Stories, TikTok</li>
+          <li>Написание вовлекающих текстов: хуки, СТА</li>
+          <li>Создание вирусного контента: мемы, тренды, UGC</li>
+        </ul>
+        <div class="card-glow"></div>
+        <div class="card-star">✦</div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <h3>Коммуникативные</h3>
+        <ul>
+          <li>Копирайтинг: посты, лендинги, e-mail, реклама</li>
+          <li>Работа с возражениями: скрипты, директ, модерация</li>
+        </ul>
+        <div class="card-glow"></div>
+        <div class="card-star">✦</div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <h3>Soft skills</h3>
+        <ul>
+          <li>Эмпатия: понимание болей аудитории</li>
+          <li>Критическое мышление: проверка гипотез</li>
+          <li>Обучаемость: платформы меняются каждые 3–6 месяцев</li>
+          <li>Стрессоустойчивость</li>
+        </ul>
+        <div class="card-glow"></div>
+        <div class="card-star">✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КЕЙСЫ -->
+  <section class="cases" id="cases">
+    <div class="section-label">✦ КЕЙСЫ ✦</div>
+    <div class="cases-grid">
+      <div class="case-card" data-tilt>
+        <div class="case-icon">📈</div>
+        <h4>Продажи с рилс на 1,7 млн</h4>
+        <p>Развитие бренда без таргета через рилс, привлечение новых подписчиков и продажи. Ноябрь 2024.</p>
+        
+        <div class="card-horseshoe">
+          <img src="images/podckova.svg" alt="Подкова" />
+        </div>
+        <div class="case-shine"></div>
+      </div>
+      <div class="case-card" data-tilt>
+        <div class="case-icon">🎬</div>
+        <h4>Продвижение киношколы</h4>
+        <p>Ноябрь 2025 – апрель 2026. Увеличение публичного присутствия и продаж.</p>
+        <div class="card-horseshoe">
+          <img src="images/podckova.svg" alt="Подкова" />
+        </div>
+        <div class="case-shine"></div>
+      </div>
+      <div class="case-card" data-tilt>
+        <div class="case-icon">🏝️</div>
+        <h4>Недвижимость на Бали</h4>
+        <p>Полное оформление и продвижение профиля по продаже недвижимости на Бали за месяц.</p>
+        <div class="card-horseshoe">
+          <img src="images/podckova.svg" alt="Подкова" />
+        </div>
+        <div class="case-shine"></div>
+      </div>
+    </div>
+  </section>
+
+<!-- ПРИМЕРЫ -->
+<section class="examples" id="examples">
+  <div class="section-label">✦ ПРИМЕРЫ ВЕДЕНИЯ / ОФОРМЛЕНИЯ ЛЕНТЫ ✦</div>
+  <div class="examples-grid">
+    <div class="example-item" data-tilt onclick="window.openImageModal('images/1d90f021-c8b3-4d8d-9.webp')" style="cursor:pointer;">
+      <div class="example-image">
+        <img src="images/1d90f021-c8b3-4d8d-9.webp" alt="Пример оформления ленты 1" />
+        <div class="example-image-overlay">
+          <span>✦</span>
+        </div>
+      </div>
+      
+      <div class="example-star">✦</div>
+      <div class="example-glow"></div>
+    </div>
+    
+    <div class="example-item" data-tilt onclick="window.openImageModal('images/a309ace6-9fd0-4be8-b.webp')" style="cursor:pointer;">
+      <div class="example-image">
+        <img src="images/a309ace6-9fd0-4be8-b.webp" alt="Пример оформления ленты 2" />
+        <div class="example-image-overlay">
+          <span>✦</span>
+        </div>
+      </div>
+      
+      <div class="example-star">✦</div>
+      <div class="example-glow"></div>
+    </div>
+    
+    <div class="example-item" data-tilt onclick="window.openImageModal('images/ae66bb64-c982-4516-b.webp')" style="cursor:pointer;">
+      <div class="example-image">
+        <img src="images/ae66bb64-c982-4516-b.webp" alt="Пример оформления ленты 3" />
+        <div class="example-image-overlay">
+          <span>✦</span>
+        </div>
+      </div>
+      
+      <div class="example-star">✦</div>
+      <div class="example-glow"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-column">
+      <div class="footer-logo">✦ МА ✦</div>
+      <p class="footer-desc">Создаю системы SMM, которые приносят продажи и реальные результаты.</p>
+      <div class="footer-socials">
+        <a href="https://t.me/yourusername" target="_blank" aria-label="Telegram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.626 7.644c-.122.547-.446.68-.905.423l-2.506-1.852-1.208 1.163c-.134.134-.246.246-.505.246l.18-2.553 4.648-4.2c.202-.18-.044-.28-.313-.101l-5.748 3.617-2.476-.772c-.538-.168-.548-.538.113-.795l9.694-3.738c.448-.167.84.104.683.78z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Навигация</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">О себе</a></li>
+        <li><a href="index.html#skills">Навыки</a></li>
+        <li><a href="index.html#cases">Кейсы</a></li>
+        <li><a href="index.html#examples">Примеры</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Контакты</h4>
+      <ul class="footer-contacts">
+        <li>
+          <span class="footer-contact-icon">📧</span>
+          <a href="mailto:mary@smm.ru">mary@smm.ru</a>
+        </li>
+        <li>
+          <span class="footer-contact-icon">📱</span>
+          <a href="tel:+79123456789">+7 (912) 345-67-89</a>
+        </li>
+        <li>
+          <span class="footer-contact-icon">📍</span>
+          <span>Москва, Россия</span>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="footer-column footer-horseshoe-column">
+      <div class="footer-horseshoe-big">
+        <img src="images/podckova.svg" alt="Подкова" />
+        <p class="footer-horseshoe-text">Пусть удача будет на вашей стороне ✨</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <span class="footer-star">✦</span>
+    <span>Мария Архангельская · SMM 2026</span>
+    <span class="footer-horseshoe">
+      <img src="images/podckova.svg" alt="Подкова" />
+    </span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

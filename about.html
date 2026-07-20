@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <title>Мария Архангельская · О себе</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <canvas id="starsCanvas"></canvas>
+
+<!-- Меню -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo" style="text-decoration: none; cursor: pointer;">✦ МА ✦</a>
+  
+  <!-- Бургер-кнопка с кружочками -->
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <div class="burger-dots-wrapper">
+      <span class="color-dot color-pink" data-theme="pink"></span>
+      <span class="color-dot color-dark-blue" data-theme="dark"></span>
+      <span class="color-dot color-cream" data-theme="cream"></span>
+    </div>
+    <div class="burger-menu" id="burgerMenu">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-horseshoe">
+        <img src="images/podckova.svg" alt="Подкова" />
+      </span>
+    </div>
+  </div>
+  
+  <ul class="nav-links" id="navLinks">
+    <li><a href="about.html">О себе</a></li>
+    <li><a href="index.html#skills">Навыки</a></li>
+    <li><a href="index.html#cases">Кейсы</a></li>
+    <li><a href="index.html#examples">Примеры</a></li>
+    <li class="nav-horseshoe-desktop">
+      <a href="index.html" style="display: inline-block; text-decoration: none; cursor: pointer;">
+        <img src="images/podckova.svg" alt="Подкова" />
+      </a>
+    </li>
+  </ul>
+  
+  <!-- Подкова с кружочками (десктоп) -->
+  <div class="nav-horseshoe-wrapper">
+    <div class="color-dots">
+      <span class="color-dot color-pink" data-theme="pink"></span>
+      <span class="color-dot color-dark-blue" data-theme="dark"></span>
+      <span class="color-dot color-cream" data-theme="cream"></span>
+    </div>
+    <div class="nav-horseshoe">
+      <a href="index.html" style="display: inline-block; text-decoration: none; cursor: pointer;">
+        <img src="images/podckova.svg" alt="Подкова" />
+      </a>
+    </div>
+  </div>
+</nav>
+
+  <section class="about-page" id="about">
+    <div class="about-container">
+      <div class="about-header">
+        <div class="about-avatar">
+          <img src="images/Group 24.png" alt="Мария Архангельская" />
+          <div class="avatar-ring"></div>
+        </div>
+        <div class="about-title">
+          <h1>МАРИЯ АРХАНГЕЛЬСКАЯ</h1>
+          <p class="about-subtitle">SMM-специалист · 3 года опыта</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="about-card">
+            <div class="about-card-icon">👋</div>
+            <h3>Давайте познакомимся ближе!</h3>
+            <p>
+              <strong>Меня зовут Мария</strong>, мне 21 год. Живу в Москве.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">🎓</div>
+            <h3>Образование</h3>
+            <p>
+              По образованию <strong>переводчик</strong>, свободно владею двумя языками: 
+              <span class="highlight">арабский</span> и <span class="highlight">английский</span>.
+            </p>
+            <p class="about-small">Образование получаю в <strong>РУДН</strong>.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">💼</div>
+            <h3>Опыт работы</h3>
+            <p class="about-big-number">3 года</p>
+            <p>SMM-специалистом</p>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="about-card">
+            <div class="about-card-icon">🚀</div>
+            <h3>Мой путь в SMM</h3>
+            <p>
+              Еще в школе поняла, что хочу заниматься SMM, но долго не могла решиться. 
+              Одним вечером сделала этот шаг и вот уже <strong>больше трех лет</strong> погружена в эту профессию.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">📚</div>
+            <h3>Обучение</h3>
+            <p>
+              Помимо обучений SMM, также проходила несколько больших курсов по 
+              <strong>маркетингу и продажам</strong>!
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">🔄</div>
+            <h3>Опыт в продажах</h3>
+            <p>
+              Работала в сфере онлайн продаж, но поняла, что SMM и маркетинг подходят мне больше!
+            </p>
+            <p class="about-small">
+              Но в продажи иногда включаюсь тоже, если например надо подменить кого-то из близкого окружения!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-qualities">
+        <div class="section-label">✦ МОИ ЛУЧШИЕ КАЧЕСТВА ✦</div>
+        <div class="qualities-grid">
+          <div class="quality-item">
+            <span class="quality-icon">⭐</span>
+            <h4>Ответственность</h4>
+          </div>
+          <div class="quality-item">
+            <span class="quality-icon">💬</span>
+            <h4>Коммуникабельность</h4>
+          </div>
+          <div class="quality-item">
+            <span class="quality-icon">💪</span>
+            <h4>Трудолюбие</h4>
+          </div>
+          <div class="quality-item">
+            <span class="quality-icon">🤝</span>
+            <h4>Умение располагать к себе людей</h4>
+          </div>
+          <div class="quality-item">
+            <span class="quality-icon">🧠</span>
+            <h4>Быстрая обучаемость</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-back">
+        <a href="index.html" class="hero-badge">✦ На главную ✦</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-inner">
+    <div class="footer-column">
+      <div class="footer-logo">✦ МА ✦</div>
+      <p class="footer-desc">Создаю системы SMM, которые приносят продажи и реальные результаты.</p>
+      <div class="footer-socials">
+        <a href="https://t.me/yourusername" target="_blank" aria-label="Telegram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.626 7.644c-.122.547-.446.68-.905.423l-2.506-1.852-1.208 1.163c-.134.134-.246.246-.505.246l.18-2.553 4.648-4.2c.202-.18-.044-.28-.313-.101l-5.748 3.617-2.476-.772c-.538-.168-.548-.538.113-.795l9.694-3.738c.448-.167.84.104.683.78z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Навигация</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">О себе</a></li>
+        <li><a href="index.html#skills">Навыки</a></li>
+        <li><a href="index.html#cases">Кейсы</a></li>
+        <li><a href="index.html#examples">Примеры</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Контакты</h4>
+      <ul class="footer-contacts">
+        <li>
+          <span class="footer-contact-icon">📧</span>
+          <a href="mailto:mary@smm.ru">mary@smm.ru</a>
+        </li>
+        <li>
+          <span class="footer-contact-icon">📱</span>
+          <a href="tel:+79123456789">+7 (912) 345-67-89</a>
+        </li>
+        <li>
+          <span class="footer-contact-icon">📍</span>
+          <span>Москва, Россия</span>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="footer-column footer-horseshoe-column">
+      <div class="footer-horseshoe-big">
+        <img src="images/podckova.svg" alt="Подкова" />
+        <p class="footer-horseshoe-text">Пусть удача будет на вашей стороне ✨</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <span class="footer-star">✦</span>
+    <span>Мария Архангельская · SMM 2026</span>
+    <span class="footer-horseshoe">
+      <img src="images/podckova.svg" alt="Подкова" />
+    </span>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
